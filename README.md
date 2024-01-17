@@ -31,7 +31,7 @@ O diretório `screens` contém três arquivos: `home_page.dart`, `favorites_page
 - **favorites_page.dart**: Exibe os pares favoritos. Se não houver favoritos, exibe uma mensagem dizendo "Sem favoritos ainda." Caso contrário, lista todos os pares favoritos.
 - **generator_page.dart**: Exibe o par atual e permite ao usuário alternar se o par é favorito e obter o próximo par.
 
-## Running the Application / ## Executando o Aplicativo
+## Running the Application / Executando o Aplicativo
 
 To run the application, use the following command in the terminal. Make sure you have Flutter installed and set up correctly.
 
