@@ -13,7 +13,7 @@ O diretório `models` contém dois arquivos: `app_state.dart` e `app_state_provi
 
 - **app_state.dart**: Defines the `MyAppState` class, which holds the current state of the application, including the current pair and the favorites.
 - **app_state_provider.dart**: Provides the `MyAppState` instance to the rest of the application using the Provider package.
-- 
+  
 - **app_state.dart**: Define a classe `MyAppState`, que armazena o estado atual do aplicativo, incluindo o par atual e os favoritos.
 - **app_state_provider.dart**: Fornece a instância `MyAppState` para o restante do aplicativo usando o pacote Provider.
 
@@ -31,10 +31,10 @@ O diretório `screens` contém três arquivos: `home_page.dart`, `favorites_page
 - **favorites_page.dart**: Exibe os pares favoritos. Se não houver favoritos, exibe uma mensagem dizendo "Sem favoritos ainda." Caso contrário, lista todos os pares favoritos.
 - **generator_page.dart**: Exibe o par atual e permite ao usuário alternar se o par é favorito e obter o próximo par.
 
-## Running the Application
-## Executando o Aplicativo
+## Running the Application / ## Executando o Aplicativo
 
 To run the application, use the following command in the terminal. Make sure you have Flutter installed and set up correctly.
+
 Para executar o aplicativo, use o seguinte comando no terminal. Certifique-se de que o Flutter esteja instalado e configurado corretamente.
 
 ```bash
