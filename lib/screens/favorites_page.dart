@@ -1,5 +1,4 @@
-
-
+import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:guided_app/models/app_state.dart';
 import 'package:provider/provider.dart';
@@ -28,6 +27,34 @@ class FavoritesPage extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.favorite),
             title: Text(pair.asLowerCase),
+            trailing: IconButton(
+              icon: const Icon(Icons.delete),
+              onPressed: () {
+                final myAppState =
+                    Provider.of<MyAppState>(context, listen: false);
+                showDialog<bool>(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: const Text("Confirm Deletion"),
+                        content: const Text(
+                            "Are you sure you want to delete this item?"),
+                        actions: <Widget>[
+                          TextButton(
+                            child: const Text("Cancel"),
+                            onPressed: () => Navigator.of(context).pop(false),
+                          ),
+                          TextButton(
+                            child: const Text("Delete"),
+                            onPressed: () {
+                              myAppState.removeFavorite(pair);
+                              Navigator.of(context).pop(true);
+                            },
+                          ),
+                        ],
+                      ),
+                    );
+              },
+            ),
           ),
       ],
     );

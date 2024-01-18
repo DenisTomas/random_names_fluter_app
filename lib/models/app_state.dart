@@ -19,4 +19,11 @@ class MyAppState extends ChangeNotifier {
     }
     notifyListeners();
   }
+
+  void removeFavorite(WordPair pair) {
+    if (favorites.contains(pair)) {
+      favorites.remove(pair);
+      notifyListeners();
+    }
+  }
 }
